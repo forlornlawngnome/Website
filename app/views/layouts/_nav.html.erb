@@ -1,0 +1,10 @@
+<%= nav_bar fixed: :top, brand: "", responsive: true do %>
+	<%= menu_group do %>
+        <%= menu_item "Home", root_path, :class=>"nav-bigger" %>
+		<%= menu_item "Experience", experience_path, :class=>"nav-bigger"%>
+        <%= menu_item "Robotics", robots_path, :class=>"nav-bigger" %>
+        <%= menu_item "Sewing", sewing_path, :class=>"nav-bigger" %>
+		<%= menu_item "Coding Projects", projects_path, :class=>"nav-bigger" %>
+        <%= menu_item "Maker Faire NC", makerfaire_path, :class=>"nav-bigger" %>
+    <% end %>
+<%end%>

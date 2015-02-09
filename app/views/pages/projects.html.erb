@@ -1,0 +1,50 @@
+<h1 class="text-pink text-center">Coding Projects</h1>
+
+<div class="row">
+	<h4>Virtualization Launchpad - Management and Monitoring</h4>
+	<div class="col-md-12">
+		<%=image_tag("vLaunch.png", alt:"vLaunch", class:"col-md-6")%>
+		<p>vLaunch is a user interface, billing and reporting tool to manage a virtualization environment. </p>
+		<p>The real genious behind this program is the request setup. It enables admins to dynamically create request types. By simply choosing which tasks an action should have, admins can create entirely new request types with different required information for the user to fill in. This enables new automated tasks without the admins needing to change the base code. It also allows reuse of code. </p>
+		<p>For example, an admin could create a task "Power on VM". Power on VM only requires the VM's name. They could then create a request type which is only the task "Power on VM". The admin could also use the power on task in a "Change RAM" request by using a "Power Off VM", "Change RAM on VM", and "Power On VM" tasks, in that order. vLaunch will step through each task, completing the larger goal. The "Change RAM on VM" task requires an amount of RAM for the VM. Thus, the form the user sees asks for a VM's name and an amount of RAM.</p>
+		<p>In addition to generating the form, it dynamically creates the arguments which get passed to the tasks's script. This ensures that, as long as an admin reads the documentation, each admin can create their own custom requests and tasks for users. Since the scripts are seperate from vLaunch, they can be written in whichever language is easiest for the admin. It is currently running scripts in Java, Python and Ruby.</p>
+		<p>vLaunch is also designed to work across many different locations. It is specifically designed to give admins the ability to customize, as well as appropriately segments permissions. Users can be approved to use multiple locations, based on admin discression. </p>
+	</div>
+</div>
+<br />
+<div class="row">
+	<h4>Time Logging and Reporting</h4>
+	<div class="col-md-5">
+		<%=image_tag("timesheet.png", alt:"Timesheet Graph", class:"col-md-12")%>
+	</div>
+	<div class="col-md-7">
+		<p>The robotics team got tired of trying to keep track of student hours on paper so we built a program to do so. Students sign in at the beginning of meetings with a barcode scanner and out at the end of the meeting.</p>
+
+		<p>It has adjustable variables for requirements (# hours/#meetings attended) as well as many others (see the documentation for more). We've also set it up to provide graphs and statistics for when schools or sponsors ask.</p> 
+
+		<p>You can find the code on <a href="https://github.com/FRC900/timesheet" target="_blakn">Github</a>.</p> 
+
+		<p>There is also an example website set up on <a href="http://frctimesheet.herokuapp.com/" target="_blakn">Heroku</a>. 
+		<li>Admin account - admin@900.com / zebracorns</li>
+		<li>Student account - test@900.com / zebra</li>
+		Feel free to play around and create items, please just don't delete or edit these two users. </p>
+
+		<p>Our current setup is a Raspberry Pi hooked up to a monitor and a barcode scanner. It's been working great for us.</p>
+	</div>
+</div>
+<br />
+<div class="row">
+	<h4>Team 900 Website</h4>
+	<div class="col-md-5">
+		<%=image_tag("Team900Website.png", alt:"Team Website", class:"col-md-12")%>
+	</div>
+	<div class="col-md-7">
+		<p>The robotics team had a very out-dated website which wasn't being maintained. Last year, I rebuilt the site in Ruby on Rails. </p>
+
+		<p>The site is very designed as a customized CMS. The students can easily log in and create blog entries, set meeting times or create new pages. </p> 
+		<p>The slide show on the home page is pulled from a Google Plus Photo album. When the students want to change which photos appear, they can simply copy new photos into the album or remove photos. Since we use Google to manage our photos, this works out very well.</p>
+		<p>Come check out the website: <a href="http://www.team900.org" target="_blakn">Team900.org</a>.</p>
+	</div>
+</div>
+<br />
+<br /><br />
